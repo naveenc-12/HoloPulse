@@ -55,6 +55,26 @@ const Hero = () => {
             Contact Us
           </a>
         </motion.div>
+
+        {/* Stats */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.65 }}
+          className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12"
+        >
+          {[
+            { value: "30+", label: "Happy Clients" },
+            { value: "5+", label: "Countries Served" },
+            { value: "100+", label: "Projects Delivered" },
+            { value: "3+", label: "Years of Experience" },
+          ].map((stat) => (
+            <div key={stat.label} className="text-center">
+              <p className="text-3xl md:text-4xl font-serif font-bold text-gradient-gold">{stat.value}</p>
+              <p className="mt-1 text-xs md:text-sm tracking-wider uppercase text-muted-foreground">{stat.label}</p>
+            </div>
+          ))}
+        </motion.div>
       </div>
 
       {/* Scroll indicator */}
