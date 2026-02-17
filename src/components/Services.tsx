@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Palette, Image, FileText, Monitor, Package } from "lucide-react";
+import { Palette, Image, FileText, Monitor, Package, Film, Video } from "lucide-react";
 
 const services = [
   { icon: Palette, title: "Logo Design", description: "Emblems, wordmarks & pictorial logos that define your brand identity." },
@@ -7,6 +7,8 @@ const services = [
   { icon: FileText, title: "Flyer Design", description: "Compelling flyers and brochures that drive engagement." },
   { icon: Monitor, title: "Web Design", description: "Modern, responsive websites that deliver seamless experiences." },
   { icon: Package, title: "Branding", description: "Complete brand packages — signage, cards, packaging & more." },
+  { icon: Film, title: "Video Editing", description: "Professional video editing with transitions, effects & color grading that captivate." },
+  { icon: Video, title: "Video Shoot", description: "High-quality video production for ads, events, reels & brand storytelling." },
 ];
 
 const Services = () => {
